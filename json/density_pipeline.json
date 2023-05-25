@@ -1,0 +1,25 @@
+[
+    "C:/Users/khafen/OneDrive - DOI/main/Data/TOIL/rs_nv5/202206/point_cloud/tilecls/UTM10/10TEQ7656.las",
+    {
+        "type": "filters.range",
+        "limits": "NumberOfReturns[1:1], Classification[1:2]"
+    },
+    {
+        "type": "filters.radialdensity",
+        "radius": 0.5
+    },
+    {
+        "type": "writers.gdal",
+        "filename": "C:/Users/khafen/OneDrive - DOI/main/Data/TOIL/derived/202206/UTM10/raster/point_density/10TEQ7656.tif",
+        "dimension": "RadialDensity",
+        "output_type": "mean",
+        "resolution": 0.5
+    },
+    {
+        "type": "writers.gdal",
+        "filename": "C:/Users/khafen/OneDrive - DOI/main/Data/TOIL/derived/202206/UTM10/raster/point_intensity/10TEQ7656.tif",
+        "dimension": "Intensity",
+        "output_type": "mean",
+        "resolution": 0.5
+    }
+]
