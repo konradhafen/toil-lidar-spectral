@@ -7,6 +7,10 @@ dir_in = r"C:\Users\khafen\OneDrive - DOI\main\Data\TOIL\elevation\breitenbush_p
 fn_streams = 'be_devils_creek_concurrent_superimposed_fac_ch_esri.tif'
 fn_out = 'be_devils_creek_concurrent_superimposed_fac_ch_esri_remap.tif'
 
+dir_in = r"C:\Users\khafen\DOI\CDI - Toil Working Group - CDI_TOIL\TOIL\elevation\nv5_derivatives\elevation\donner-blitzen"
+fn_streams = 'superimposed_fac_from_d8_channel_heads.tif'
+fn_out = 'superimposed_fac_from_d8_channel_heads_remap.tif'
+
 driver = gdal.GetDriverByName('GTiff')
 
 ds = gdal.Open(os.path.join(dir_in, fn_streams))

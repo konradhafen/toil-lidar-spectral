@@ -1,0 +1,14 @@
+[
+    "C:/Users/khafen/DOI/CDI - Toil Working Group - CDI_TOIL/TOIL/nv5_original_data_and_reports/202206/point_cloud/tilecls/UTM10/10TEQ7656.las",
+    {
+        "type": "filters.range",
+        "limits": "ReturnNumber[1:1], Classification[1:2]"
+    },
+    {
+        "type": "writers.gdal",
+        "filename": "C:/Users/khafen/DOI/CDI - Toil Working Group - CDI_TOIL/TOIL/derived/202206/UTM10/raster/surface_model/10TEQ7656.tif",
+        "output_type": "idw",
+        "resolution": 0.5,
+        "radius": 1
+    }
+]
