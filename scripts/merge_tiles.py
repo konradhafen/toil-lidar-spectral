@@ -4,8 +4,8 @@ import time
 
 dates = ["202206", "202209"]
 utms = ["UTM10", "UTM11"]
-rasters = ["point_density", "point_intensity", "surface_model"]
-rasters = ["point_intensity_all_points", "surface_model_all_points"]
+# rasters = ["point_density", "point_intensity", "surface_model"]
+rasters = ["point_density_all_points", "point_intensity_all_points"]
 
 for date in dates:
     for utm in utms:
